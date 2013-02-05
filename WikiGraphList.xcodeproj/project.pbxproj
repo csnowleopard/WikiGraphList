@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1518D516C1643F0030FA0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1518D416C1643F0030FA0E /* UIKit.framework */; };
+		BF1518D716C1643F0030FA0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1518D616C1643F0030FA0E /* Foundation.framework */; };
+		BF1518D916C1643F0030FA0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1518D816C1643F0030FA0E /* CoreGraphics.framework */; };
+		BF1518DF16C1643F0030FA0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1518DD16C1643F0030FA0E /* InfoPlist.strings */; };
+		BF1518E116C1643F0030FA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518E016C1643F0030FA0E /* main.m */; };
+		BF1518E516C1643F0030FA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518E416C1643F0030FA0E /* AppDelegate.m */; };
+		BF1518E816C1643F0030FA0E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1518E616C1643F0030FA0E /* MainStoryboard_iPhone.storyboard */; };
+		BF1518EB16C164400030FA0E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1518E916C164400030FA0E /* MainStoryboard_iPad.storyboard */; };
+		BF1518EE16C164400030FA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518ED16C164400030FA0E /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF1518D016C1643F0030FA0E /* WikiGraphList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiGraphList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1518D416C1643F0030FA0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF1518D616C1643F0030FA0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF1518D816C1643F0030FA0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF1518DC16C1643F0030FA0E /* WikiGraphList-Info.plist */ = {isa = PBXFileReference; path = "WikiGraphList-Info.plist"; sourceTree = "<group>"; };
+		BF1518DE16C1643F0030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF1518E016C1643F0030FA0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF1518E216C1643F0030FA0E /* WikiGraphList-Prefix.pch */ = {isa = PBXFileReference; path = "WikiGraphList-Prefix.pch"; sourceTree = "<group>"; };
+		BF1518E316C1643F0030FA0E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF1518E416C1643F0030FA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF1518E716C1643F0030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BF1518EA16C164400030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BF1518EC16C164400030FA0E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		BF1518ED16C164400030FA0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF1518CD16C1643F0030FA0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1518D516C1643F0030FA0E /* UIKit.framework in Frameworks */,
+				BF1518D716C1643F0030FA0E /* Foundation.framework in Frameworks */,
+				BF1518D916C1643F0030FA0E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF1518C516C1643F0030FA0E = {
+			isa = PBXGroup;
+			children = (
+				BF1518DA16C1643F0030FA0E /* WikiGraphList */,
+				BF1518D316C1643F0030FA0E /* Frameworks */,
+				BF1518D116C1643F0030FA0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF1518D116C1643F0030FA0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1518D016C1643F0030FA0E /* WikiGraphList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1518D316C1643F0030FA0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF1518D416C1643F0030FA0E /* UIKit.framework */,
+				BF1518D616C1643F0030FA0E /* Foundation.framework */,
+				BF1518D816C1643F0030FA0E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF1518DA16C1643F0030FA0E /* WikiGraphList */ = {
+			isa = PBXGroup;
+			children = (
+				BF1518E316C1643F0030FA0E /* AppDelegate.h */,
+				BF1518E416C1643F0030FA0E /* AppDelegate.m */,
+				BF1518E616C1643F0030FA0E /* MainStoryboard_iPhone.storyboard */,
+				BF1518E916C164400030FA0E /* MainStoryboard_iPad.storyboard */,
+				BF1518EC16C164400030FA0E /* ViewController.h */,
+				BF1518ED16C164400030FA0E /* ViewController.m */,
+				BF1518DB16C1643F0030FA0E /* Supporting Files */,
+			);
+			path = WikiGraphList;
+			sourceTree = "<group>";
+		};
+		BF1518DB16C1643F0030FA0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1518DC16C1643F0030FA0E /* WikiGraphList-Info.plist */,
+				BF1518DD16C1643F0030FA0E /* InfoPlist.strings */,
+				BF1518E016C1643F0030FA0E /* main.m */,
+				BF1518E216C1643F0030FA0E /* WikiGraphList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1518CF16C1643F0030FA0E /* WikiGraphList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1518F116C164400030FA0E /* Build configuration list for PBXNativeTarget "WikiGraphList" */;
+			buildPhases = (
+				BF1518CC16C1643F0030FA0E /* Sources */,
+				BF1518CD16C1643F0030FA0E /* Frameworks */,
+				BF1518CE16C1643F0030FA0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiGraphList;
+			productName = WikiGraphList;
+			productReference = BF1518D016C1643F0030FA0E /* WikiGraphList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1518C716C1643F0030FA0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = BF1518CA16C1643F0030FA0E /* Build configuration list for PBXProject "WikiGraphList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF1518C516C1643F0030FA0E;
+			productRefGroup = BF1518D116C1643F0030FA0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1518CF16C1643F0030FA0E /* WikiGraphList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF1518CE16C1643F0030FA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1518DF16C1643F0030FA0E /* InfoPlist.strings in Resources */,
+				BF1518E816C1643F0030FA0E /* MainStoryboard_iPhone.storyboard in Resources */,
+				BF1518EB16C164400030FA0E /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF1518CC16C1643F0030FA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1518E116C1643F0030FA0E /* main.m in Sources */,
+				BF1518E516C1643F0030FA0E /* AppDelegate.m in Sources */,
+				BF1518EE16C164400030FA0E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF1518DD16C1643F0030FA0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1518DE16C1643F0030FA0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF1518E616C1643F0030FA0E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1518E716C1643F0030FA0E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BF1518E916C164400030FA0E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1518EA16C164400030FA0E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF1518EF16C164400030FA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF1518F016C164400030FA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF1518F216C164400030FA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiGraphList/WikiGraphList-Prefix.pch";
+				INFOPLIST_FILE = "WikiGraphList/WikiGraphList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF1518F316C164400030FA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiGraphList/WikiGraphList-Prefix.pch";
+				INFOPLIST_FILE = "WikiGraphList/WikiGraphList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1518CA16C1643F0030FA0E /* Build configuration list for PBXProject "WikiGraphList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1518EF16C164400030FA0E /* Debug */,
+				BF1518F016C164400030FA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1518F116C164400030FA0E /* Build configuration list for PBXNativeTarget "WikiGraphList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1518F216C164400030FA0E /* Debug */,
+				BF1518F316C164400030FA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1518C716C1643F0030FA0E /* Project object */;
+}
