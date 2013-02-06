@@ -16,6 +16,22 @@
 		BF1518E816C1643F0030FA0E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1518E616C1643F0030FA0E /* MainStoryboard_iPhone.storyboard */; };
 		BF1518EB16C164400030FA0E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1518E916C164400030FA0E /* MainStoryboard_iPad.storyboard */; };
 		BF1518EE16C164400030FA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518ED16C164400030FA0E /* ViewController.m */; };
+		BF1518F616C178D50030FA0E /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518F516C178D50030FA0E /* MyViewController.m */; };
+		BF15191116C190AF0030FA0E /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518F916C190AF0030FA0E /* NSObject+SBJson.m */; };
+		BF15191216C190AF0030FA0E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518FC16C190AF0030FA0E /* SBJsonParser.m */; };
+		BF15191316C190AF0030FA0E /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1518FE16C190AF0030FA0E /* SBJsonStreamParser.m */; };
+		BF15191416C190AF0030FA0E /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190016C190AF0030FA0E /* SBJsonStreamParserAccumulator.m */; };
+		BF15191516C190AF0030FA0E /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190216C190AF0030FA0E /* SBJsonStreamParserAdapter.m */; };
+		BF15191616C190AF0030FA0E /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190416C190AF0030FA0E /* SBJsonStreamParserState.m */; };
+		BF15191716C190AF0030FA0E /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190616C190AF0030FA0E /* SBJsonStreamWriter.m */; };
+		BF15191816C190AF0030FA0E /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190816C190AF0030FA0E /* SBJsonStreamWriterAccumulator.m */; };
+		BF15191916C190AF0030FA0E /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190A16C190AF0030FA0E /* SBJsonStreamWriterState.m */; };
+		BF15191A16C190AF0030FA0E /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190C16C190AF0030FA0E /* SBJsonTokeniser.m */; };
+		BF15191B16C190AF0030FA0E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15190E16C190AF0030FA0E /* SBJsonUTF8Stream.m */; };
+		BF15191C16C190AF0030FA0E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15191016C190AF0030FA0E /* SBJsonWriter.m */; };
+		BF15194D16C193710030FA0E /* WikipediaHelper.h in Frameworks */ = {isa = PBXBuildFile; fileRef = BF15194B16C193470030FA0E /* WikipediaHelper.h */; };
+		BF15194E16C193710030FA0E /* WikipediaHelper.m in Frameworks */ = {isa = PBXBuildFile; fileRef = BF15194C16C193470030FA0E /* WikipediaHelper.m */; };
+		BF15194F16C193D00030FA0E /* WikipediaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15194C16C193470030FA0E /* WikipediaHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +39,85 @@
 		BF1518D416C1643F0030FA0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF1518D616C1643F0030FA0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF1518D816C1643F0030FA0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BF1518DC16C1643F0030FA0E /* WikiGraphList-Info.plist */ = {isa = PBXFileReference; path = "WikiGraphList-Info.plist"; sourceTree = "<group>"; };
+		BF1518DC16C1643F0030FA0E /* WikiGraphList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WikiGraphList-Info.plist"; sourceTree = "<group>"; };
 		BF1518DE16C1643F0030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF1518E016C1643F0030FA0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BF1518E216C1643F0030FA0E /* WikiGraphList-Prefix.pch */ = {isa = PBXFileReference; path = "WikiGraphList-Prefix.pch"; sourceTree = "<group>"; };
-		BF1518E316C1643F0030FA0E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF1518E216C1643F0030FA0E /* WikiGraphList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiGraphList-Prefix.pch"; sourceTree = "<group>"; };
+		BF1518E316C1643F0030FA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF1518E416C1643F0030FA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BF1518E716C1643F0030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		BF1518EA16C164400030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		BF1518EC16C164400030FA0E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		BF1518EC16C164400030FA0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BF1518ED16C164400030FA0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF1518F416C178D50030FA0E /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		BF1518F516C178D50030FA0E /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		BF1518F816C190AF0030FA0E /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		BF1518F916C190AF0030FA0E /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		BF1518FA16C190AF0030FA0E /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		BF1518FB16C190AF0030FA0E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		BF1518FC16C190AF0030FA0E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		BF1518FD16C190AF0030FA0E /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		BF1518FE16C190AF0030FA0E /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		BF1518FF16C190AF0030FA0E /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		BF15190016C190AF0030FA0E /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		BF15190116C190AF0030FA0E /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		BF15190216C190AF0030FA0E /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		BF15190316C190AF0030FA0E /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		BF15190416C190AF0030FA0E /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		BF15190516C190AF0030FA0E /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		BF15190616C190AF0030FA0E /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		BF15190716C190AF0030FA0E /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		BF15190816C190AF0030FA0E /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		BF15190916C190AF0030FA0E /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		BF15190A16C190AF0030FA0E /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		BF15190B16C190AF0030FA0E /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		BF15190C16C190AF0030FA0E /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		BF15190D16C190AF0030FA0E /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		BF15190E16C190AF0030FA0E /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		BF15190F16C190AF0030FA0E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		BF15191016C190AF0030FA0E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		BF15191D16C190BF0030FA0E /* WikipediaHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WikipediaHelper.h; path = ../../WikiApiObjectiveC/WikiApiObjectiveC/WikipediaHelper.h; sourceTree = "<group>"; };
+		BF15191E16C190BF0030FA0E /* WikipediaHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WikipediaHelper.m; path = ../../WikiApiObjectiveC/WikiApiObjectiveC/WikipediaHelper.m; sourceTree = "<group>"; };
+		BF15191F16C190BF0030FA0E /* wikipedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wikipedia.png; path = ../../WikiApiObjectiveC/WikiApiObjectiveC/wikipedia.png; sourceTree = "<group>"; };
+		BF15192216C193470030FA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF15192316C193470030FA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF15192516C193470030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
+		BF15192716C193470030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF15192916C193470030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
+		BF15192B16C193470030FA0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
+		BF15192C16C193470030FA0E /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		BF15192D16C193470030FA0E /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		BF15192E16C193470030FA0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF15192F16C193470030FA0E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BF15193016C193470030FA0E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BF15193116C193470030FA0E /* SBJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		BF15193216C193470030FA0E /* SBJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		BF15193316C193470030FA0E /* SBJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		BF15193416C193470030FA0E /* SBJsonStreamParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		BF15193516C193470030FA0E /* SBJsonStreamParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		BF15193616C193470030FA0E /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		BF15193716C193470030FA0E /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		BF15193816C193470030FA0E /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		BF15193916C193470030FA0E /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		BF15193A16C193470030FA0E /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		BF15193B16C193470030FA0E /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		BF15193C16C193470030FA0E /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		BF15193D16C193470030FA0E /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		BF15193E16C193470030FA0E /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		BF15193F16C193470030FA0E /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		BF15194016C193470030FA0E /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		BF15194116C193470030FA0E /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		BF15194216C193470030FA0E /* SBJsonTokeniser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		BF15194316C193470030FA0E /* SBJsonTokeniser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		BF15194416C193470030FA0E /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		BF15194516C193470030FA0E /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		BF15194616C193470030FA0E /* SBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		BF15194716C193470030FA0E /* SBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		BF15194816C193470030FA0E /* WikiApiObjectiveC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WikiApiObjectiveC-Info.plist"; sourceTree = "<group>"; };
+		BF15194916C193470030FA0E /* WikiApiObjectiveC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiApiObjectiveC-Prefix.pch"; sourceTree = "<group>"; };
+		BF15194A16C193470030FA0E /* wikipedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wikipedia.png; sourceTree = "<group>"; };
+		BF15194B16C193470030FA0E /* WikipediaHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WikipediaHelper.h; sourceTree = "<group>"; };
+		BF15194C16C193470030FA0E /* WikipediaHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikipediaHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF15194D16C193710030FA0E /* WikipediaHelper.h in Frameworks */,
+				BF15194E16C193710030FA0E /* WikipediaHelper.m in Frameworks */,
 				BF1518D516C1643F0030FA0E /* UIKit.framework in Frameworks */,
 				BF1518D716C1643F0030FA0E /* Foundation.framework in Frameworks */,
 				BF1518D916C1643F0030FA0E /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +139,7 @@
 		BF1518C516C1643F0030FA0E = {
 			isa = PBXGroup;
 			children = (
+				BF15192116C193470030FA0E /* WikiApiObjectiveC */,
 				BF1518DA16C1643F0030FA0E /* WikiGraphList */,
 				BF1518D316C1643F0030FA0E /* Frameworks */,
 				BF1518D116C1643F0030FA0E /* Products */,
@@ -79,9 +167,13 @@
 		BF1518DA16C1643F0030FA0E /* WikiGraphList */ = {
 			isa = PBXGroup;
 			children = (
+				BF15192016C1917B0030FA0E /* WikiApiCode */,
+				BF1518F716C190AF0030FA0E /* Classes */,
 				BF1518E316C1643F0030FA0E /* AppDelegate.h */,
 				BF1518E416C1643F0030FA0E /* AppDelegate.m */,
 				BF1518E616C1643F0030FA0E /* MainStoryboard_iPhone.storyboard */,
+				BF1518F416C178D50030FA0E /* MyViewController.h */,
+				BF1518F516C178D50030FA0E /* MyViewController.m */,
 				BF1518E916C164400030FA0E /* MainStoryboard_iPad.storyboard */,
 				BF1518EC16C164400030FA0E /* ViewController.h */,
 				BF1518ED16C164400030FA0E /* ViewController.m */,
@@ -99,6 +191,96 @@
 				BF1518E216C1643F0030FA0E /* WikiGraphList-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF1518F716C190AF0030FA0E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF1518F816C190AF0030FA0E /* NSObject+SBJson.h */,
+				BF1518F916C190AF0030FA0E /* NSObject+SBJson.m */,
+				BF1518FA16C190AF0030FA0E /* SBJson.h */,
+				BF1518FB16C190AF0030FA0E /* SBJsonParser.h */,
+				BF1518FC16C190AF0030FA0E /* SBJsonParser.m */,
+				BF1518FD16C190AF0030FA0E /* SBJsonStreamParser.h */,
+				BF1518FE16C190AF0030FA0E /* SBJsonStreamParser.m */,
+				BF1518FF16C190AF0030FA0E /* SBJsonStreamParserAccumulator.h */,
+				BF15190016C190AF0030FA0E /* SBJsonStreamParserAccumulator.m */,
+				BF15190116C190AF0030FA0E /* SBJsonStreamParserAdapter.h */,
+				BF15190216C190AF0030FA0E /* SBJsonStreamParserAdapter.m */,
+				BF15190316C190AF0030FA0E /* SBJsonStreamParserState.h */,
+				BF15190416C190AF0030FA0E /* SBJsonStreamParserState.m */,
+				BF15190516C190AF0030FA0E /* SBJsonStreamWriter.h */,
+				BF15190616C190AF0030FA0E /* SBJsonStreamWriter.m */,
+				BF15190716C190AF0030FA0E /* SBJsonStreamWriterAccumulator.h */,
+				BF15190816C190AF0030FA0E /* SBJsonStreamWriterAccumulator.m */,
+				BF15190916C190AF0030FA0E /* SBJsonStreamWriterState.h */,
+				BF15190A16C190AF0030FA0E /* SBJsonStreamWriterState.m */,
+				BF15190B16C190AF0030FA0E /* SBJsonTokeniser.h */,
+				BF15190C16C190AF0030FA0E /* SBJsonTokeniser.m */,
+				BF15190D16C190AF0030FA0E /* SBJsonUTF8Stream.h */,
+				BF15190E16C190AF0030FA0E /* SBJsonUTF8Stream.m */,
+				BF15190F16C190AF0030FA0E /* SBJsonWriter.h */,
+				BF15191016C190AF0030FA0E /* SBJsonWriter.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		BF15192016C1917B0030FA0E /* WikiApiCode */ = {
+			isa = PBXGroup;
+			children = (
+				BF15191D16C190BF0030FA0E /* WikipediaHelper.h */,
+				BF15191E16C190BF0030FA0E /* WikipediaHelper.m */,
+				BF15191F16C190BF0030FA0E /* wikipedia.png */,
+			);
+			name = WikiApiCode;
+			sourceTree = "<group>";
+		};
+		BF15192116C193470030FA0E /* WikiApiObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				BF15192216C193470030FA0E /* AppDelegate.h */,
+				BF15192316C193470030FA0E /* AppDelegate.m */,
+				BF15192416C193470030FA0E /* FlipsideViewController.xib */,
+				BF15192616C193470030FA0E /* InfoPlist.strings */,
+				BF15192816C193470030FA0E /* MainViewController_iPad.xib */,
+				BF15192A16C193470030FA0E /* MainViewController_iPhone.xib */,
+				BF15192C16C193470030FA0E /* FlipsideViewController.h */,
+				BF15192D16C193470030FA0E /* FlipsideViewController.m */,
+				BF15192E16C193470030FA0E /* main.m */,
+				BF15192F16C193470030FA0E /* MainViewController.h */,
+				BF15193016C193470030FA0E /* MainViewController.m */,
+				BF15193116C193470030FA0E /* SBJson.h */,
+				BF15193216C193470030FA0E /* SBJsonParser.h */,
+				BF15193316C193470030FA0E /* SBJsonParser.m */,
+				BF15193416C193470030FA0E /* SBJsonStreamParser.h */,
+				BF15193516C193470030FA0E /* SBJsonStreamParser.m */,
+				BF15193616C193470030FA0E /* SBJsonStreamParserAccumulator.h */,
+				BF15193716C193470030FA0E /* SBJsonStreamParserAccumulator.m */,
+				BF15193816C193470030FA0E /* SBJsonStreamParserAdapter.h */,
+				BF15193916C193470030FA0E /* SBJsonStreamParserAdapter.m */,
+				BF15193A16C193470030FA0E /* SBJsonStreamParserState.h */,
+				BF15193B16C193470030FA0E /* SBJsonStreamParserState.m */,
+				BF15193C16C193470030FA0E /* SBJsonStreamWriter.h */,
+				BF15193D16C193470030FA0E /* SBJsonStreamWriter.m */,
+				BF15193E16C193470030FA0E /* SBJsonStreamWriterAccumulator.h */,
+				BF15193F16C193470030FA0E /* SBJsonStreamWriterAccumulator.m */,
+				BF15194016C193470030FA0E /* SBJsonStreamWriterState.h */,
+				BF15194116C193470030FA0E /* SBJsonStreamWriterState.m */,
+				BF15194216C193470030FA0E /* SBJsonTokeniser.h */,
+				BF15194316C193470030FA0E /* SBJsonTokeniser.m */,
+				BF15194416C193470030FA0E /* SBJsonUTF8Stream.h */,
+				BF15194516C193470030FA0E /* SBJsonUTF8Stream.m */,
+				BF15194616C193470030FA0E /* SBJsonWriter.h */,
+				BF15194716C193470030FA0E /* SBJsonWriter.m */,
+				BF15194816C193470030FA0E /* WikiApiObjectiveC-Info.plist */,
+				BF15194916C193470030FA0E /* WikiApiObjectiveC-Prefix.pch */,
+				BF15194A16C193470030FA0E /* wikipedia.png */,
+				BF15194B16C193470030FA0E /* WikipediaHelper.h */,
+				BF15194C16C193470030FA0E /* WikipediaHelper.m */,
+			);
+			name = WikiApiObjectiveC;
+			path = ../WikiApiObjectiveC/WikiApiObjectiveC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +346,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF15194F16C193D00030FA0E /* WikipediaHelper.m in Sources */,
 				BF1518E116C1643F0030FA0E /* main.m in Sources */,
 				BF1518E516C1643F0030FA0E /* AppDelegate.m in Sources */,
 				BF1518EE16C164400030FA0E /* ViewController.m in Sources */,
+				BF1518F616C178D50030FA0E /* MyViewController.m in Sources */,
+				BF15191116C190AF0030FA0E /* NSObject+SBJson.m in Sources */,
+				BF15191216C190AF0030FA0E /* SBJsonParser.m in Sources */,
+				BF15191316C190AF0030FA0E /* SBJsonStreamParser.m in Sources */,
+				BF15191416C190AF0030FA0E /* SBJsonStreamParserAccumulator.m in Sources */,
+				BF15191516C190AF0030FA0E /* SBJsonStreamParserAdapter.m in Sources */,
+				BF15191616C190AF0030FA0E /* SBJsonStreamParserState.m in Sources */,
+				BF15191716C190AF0030FA0E /* SBJsonStreamWriter.m in Sources */,
+				BF15191816C190AF0030FA0E /* SBJsonStreamWriterAccumulator.m in Sources */,
+				BF15191916C190AF0030FA0E /* SBJsonStreamWriterState.m in Sources */,
+				BF15191A16C190AF0030FA0E /* SBJsonTokeniser.m in Sources */,
+				BF15191B16C190AF0030FA0E /* SBJsonUTF8Stream.m in Sources */,
+				BF15191C16C190AF0030FA0E /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +391,38 @@
 				BF1518EA16C164400030FA0E /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		BF15192416C193470030FA0E /* FlipsideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF15192516C193470030FA0E /* en */,
+			);
+			name = FlipsideViewController.xib;
+			sourceTree = "<group>";
+		};
+		BF15192616C193470030FA0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF15192716C193470030FA0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF15192816C193470030FA0E /* MainViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF15192916C193470030FA0E /* en */,
+			);
+			name = MainViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		BF15192A16C193470030FA0E /* MainViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF15192B16C193470030FA0E /* en */,
+			);
+			name = MainViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -250,6 +478,7 @@
 		BF1518F216C164400030FA0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiGraphList/WikiGraphList-Prefix.pch";
 				INFOPLIST_FILE = "WikiGraphList/WikiGraphList-Info.plist";
@@ -261,6 +490,7 @@
 		BF1518F316C164400030FA0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiGraphList/WikiGraphList-Prefix.pch";
 				INFOPLIST_FILE = "WikiGraphList/WikiGraphList-Info.plist";
